@@ -12,6 +12,8 @@ final class ShowInstructionsController
 {
     public function __invoke(Request $request)
     {
+
+
         // Recupera os parâmetros da query string
         $nome = $request->query('nome');
         $email = $request->query('email');
@@ -52,7 +54,6 @@ final class ShowInstructionsController
             'pessoa' => $pessoa,
             'teste' => $teste,
         ]);
-
         // ✅ Se já fez o teste, redireciona para o perfil correspondente
         if ($teste) {
             $profile = $teste->profile ?? '';

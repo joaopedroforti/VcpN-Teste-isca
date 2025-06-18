@@ -94,13 +94,11 @@ Http::post('https://events.sendpulse.com/events/id/2e11c3d7b68f4620e93cc0554a644
     'phone' => '',
     'working' => session('pessoa')->working,
     'event_date' => Carbon::now()->toDateTimeString(),
-    'profile' => $profile,
+    'profile' => $slug,
     'name' => session('pessoa')->name,
 ]);
 
-
-
-    
+   
         // 5. Retorna JSON com a URL
         return Inertia::location("https://vocenoproximonivel.com.br{$slug}");
 
