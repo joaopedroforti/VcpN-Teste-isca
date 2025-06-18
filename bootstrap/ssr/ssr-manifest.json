@@ -1,0 +1,69 @@
+{
+  "node_modules/laravel-vite-plugin/inertia-helpers/index.js": [],
+  "resources/css/app.css": [],
+  "resources/js/components/score-groups.tsx": [
+    "/build/assets/Test-BE3Q9pnJ.js"
+  ],
+  "resources/js/components/stepper.tsx": [
+    "/build/assets/Test-BE3Q9pnJ.js"
+  ],
+  "resources/js/components/ui/button.tsx": [
+    "/build/assets/button-Blam9SLI.js"
+  ],
+  "resources/js/components/ui/checkbox.tsx": [
+    "/build/assets/input-BxderhRX.js"
+  ],
+  "resources/js/components/ui/form-message.tsx": [
+    "/build/assets/input-BxderhRX.js"
+  ],
+  "resources/js/components/ui/input.tsx": [
+    "/build/assets/input-BxderhRX.js"
+  ],
+  "resources/js/components/ui/label.tsx": [
+    "/build/assets/LoginPerson-BMc6HVtN.js"
+  ],
+  "resources/js/components/ui/toast.tsx": [],
+  "resources/js/components/ui/toaster.tsx": [],
+  "resources/js/hooks/use-did-update-effect.ts": [
+    "/build/assets/Test-BE3Q9pnJ.js"
+  ],
+  "resources/js/hooks/use-is-first-render.ts": [
+    "/build/assets/Test-BE3Q9pnJ.js"
+  ],
+  "resources/js/hooks/use-show-notifications.ts": [
+    "/build/assets/AppLayout-BxL5beC1.js"
+  ],
+  "resources/js/hooks/use-toast.ts": [],
+  "resources/js/layouts/AppLayout.tsx": [
+    "/build/assets/AppLayout-BxL5beC1.js"
+  ],
+  "resources/js/lib/utils.ts": [],
+  "resources/js/pages/Dashboard.tsx": [
+    "/build/assets/Dashboard-B_lu4dvD.js"
+  ],
+  "resources/js/pages/Instructions.tsx": [
+    "/build/assets/Instructions-BPLNrjAq.js"
+  ],
+  "resources/js/pages/LoginAdmin.tsx": [
+    "/build/assets/LoginAdmin-h7lUbmTI.js"
+  ],
+  "resources/js/pages/LoginPerson.tsx": [
+    "/build/assets/LoginPerson-BMc6HVtN.js"
+  ],
+  "resources/js/pages/NotFound.tsx": [
+    "/build/assets/NotFound-9UGqf7V2.js"
+  ],
+  "resources/js/pages/Result.tsx": [
+    "/build/assets/Result-3qsPEfCa.js"
+  ],
+  "resources/js/pages/ShowBehavioralProfileTest.tsx": [
+    "/build/assets/ShowBehavioralProfileTest-CKKqHLrD.js"
+  ],
+  "resources/js/pages/Test.tsx": [
+    "/build/assets/Test-BE3Q9pnJ.js"
+  ],
+  "resources/js/ssr.jsx": [],
+  "vendor/tightenco/ziggy/src/js/Route.js": [],
+  "vendor/tightenco/ziggy/src/js/Router.js": [],
+  "vendor/tightenco/ziggy/src/js/index.js": []
+}
