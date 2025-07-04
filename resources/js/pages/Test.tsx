@@ -147,11 +147,12 @@ const Test = () => {
   const [step, setStep] = useState(0);
 
   const [groups, setGroups] = useState(() =>
-    initialGroups.map((group, i) => ({
+    initialGroups.map(group => ({
       ...group,
-      points: (i % 4) + 1, // valores cíclicos: 1, 2, 3, 4, 1, 2, ...
+      points: 0, // Nenhum ponto definido inicialmente
     }))
   );
+  
   
 
   const groupsFromStep = groups.slice(step * GROUPS_LIMIT, step * GROUPS_LIMIT + GROUPS_LIMIT).reduce((acc, group) => {
