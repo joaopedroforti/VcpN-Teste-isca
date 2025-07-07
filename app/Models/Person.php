@@ -2,30 +2,40 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Person extends Authenticatable
+class Person extends Model
 {
     use HasFactory;
 
-    /** @var bool */
-    public $timestamps = false;
+    protected $table = 'persons';
 
-    /** @var array<string> */
     protected $fillable = [
+        'reference',
+        'origin',
+        'guru_id',
+        'working',
         'name',
         'email',
         'document',
-        'working',
-        'origin'
+        'phone',
+        'address_zip_code',
+        'address_number',
+        'purchase_date',
+        'product_id',
+        'offer_id',
+        'payment_value',
+        'status',
     ];
 
-    /** @var string */
-    protected $table = 'persons';
+    protected $casts = [
+        'purchase_date' => 'datetime',
+        'created_at' => 'datetime',
+    ];
 
-    public function behavioralProfileTest(): \Illuminate\Database\Eloquent\Relations\HasOne
+    public function behavioralProfileTest()
     {
-        return $this->hasOne(BehavioralProfileTest::class);
+        return $this->hasOne(BehavioralProfileTest::class, 'person_id');
     }
 }
