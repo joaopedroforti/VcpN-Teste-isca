@@ -27,7 +27,7 @@ Route::post('teste', [SaveTestController::class, '__invoke']);
 Route::get('resultado', [ShowBehavioralProfileResultController::class, '__invoke'])->middleware('auth:person');
 Route::get('resultado/{uuid}', [ShowBehavioralProfileReportController::class, '__invoke']);
 Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
-Route::get('login', [DashboardController::class, 'loga'])->name('login');
-Route::post('login', [DashboardController::class, 'login'])->name('dashboard');
+Route::get('login', [DashboardController::class, 'loga'])->name('loga');
+Route::post('login', [DashboardController::class, 'login'])->name('login');
 // general
 Route::get('{any}', fn () => Inertia::render('NotFound'))->where('any', '.*');
