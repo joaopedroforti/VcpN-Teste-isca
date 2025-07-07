@@ -17,10 +17,9 @@ final class ShowInstructionsController
         // Recupera os parâmetros da query string
         $nome = $request->query('nome');
         $email = $request->query('email');
-        $working = $request->query('working');
 
         // ✅ Validação: redireciona se qualquer campo obrigatório estiver ausente ou vazio
-        if (empty($nome) || empty($email) || empty($working)) {
+        if (empty($nome) || empty($email)) {
             return redirect()->away('https://vocenoproximonivel.com.br/perfil');
         }
 
@@ -32,13 +31,11 @@ final class ShowInstructionsController
             $pessoa = Person::create([
                 'name' => $nome,
                 'email' => $email,
-                'working' => $working,
                 'origin' => 'lp',
             ]);
             Http::post('https://events.sendpulse.com/events/id/92233b0ed0f44984aa04516810cc3224/8906998', [
                 'email' => $email,
                 'phone' => '',
-                'working' => $working,
                 'event_date' => Carbon::now()->toDateTimeString(),
                 'profile' => null,
                 'name' => $nome,
