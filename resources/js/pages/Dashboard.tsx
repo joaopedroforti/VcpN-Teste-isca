@@ -29,7 +29,7 @@ export default function Dashboard() {
 
   return (
     <div style={styles.container}>
-      <h1 style={styles.title}>Dashboard</h1>
+      <h1>Dashboard</h1>
 
       <div style={{ margin: '20px 0', textAlign: 'center' }}>
         <input
